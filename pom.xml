@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.socket</groupId>
     <artifactId>socket.io-client</artifactId>
-    <version>1.0.3-SNAPSHOT</version>
+    <version>1.0.3-SNAPSHOT-PATCH3</version>
     <packaging>jar</packaging>
     <name>socket.io-client</name>
     <description>Socket.IO Client Library for Java</description>
@@ -29,10 +29,21 @@
         </developer>
     </developers>
 
+    <distributionManagement>
+        <repository>
+            <id>cams-utils-releases</id>
+            <url>https://repo.expx.dev/releases</url>
+        </repository>
+    </distributionManagement>
+
     <repositories>
         <repository>
             <id>jitpack.io</id>
             <url>https://jitpack.io</url>
+        </repository>
+        <repository>
+            <id>cams-utils-releases</id>
+            <url>https://repo.expx.dev/releases</url>
         </repository>
     </repositories>
 
@@ -42,9 +53,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.github.thijsa</groupId>
-            <artifactId>engine.io-client-java</artifactId>
-            <version>1.0.3</version>
+            <groupId>io.socket</groupId>
+            <artifactId>engine.io-client</artifactId>
+            <version>1.0.3-SNAPSHOT-PATCH1</version>
         </dependency>
         <dependency>
             <groupId>org.json</groupId>
